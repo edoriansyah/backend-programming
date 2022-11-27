@@ -1,2 +1,3 @@
-# Pertemuan 8
-Introduction to Node.js
+# Pertemuan 9
+
+Introduction to JavaScript and ES6
