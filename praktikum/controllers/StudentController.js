@@ -1,10 +1,29 @@
+// import Model Student
+const Student = require("../models/Student");
+
 // buat class StudentController
 class StudentController {
-  index(req, res) {
+  // index(req, res) {
+  //   // memanggil method static all
+  //   Student.all(function (students) {
+  //     const data = {
+  //       message: "Menampilkan semua students",
+  //       data: students,
+  //     };
+  //     res.json(data);
+  //   });
+  // }
+
+  // menambahkan keyword async untuk memberitahu proses asynchronous
+  async index(req, res) {
+    // memanggil method static all dengan async await
+    const students = await Student.all();
+
     const data = {
       message: "Menampilkan semua students",
-      data: [],
+      data: students,
     };
+
     res.json(data);
   }
 
