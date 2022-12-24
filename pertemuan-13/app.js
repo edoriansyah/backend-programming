@@ -1,4 +1,4 @@
-// import express dan routing
+// import express dan router
 const express = require("express");
 const router = require("./routes/api.js");
 
@@ -12,4 +12,7 @@ app.use(express.json());
 app.use(router);
 
 // Mendefinisikan port.
-app.listen(3000);
+const PORT = 3000;
+app.listen(PORT, () =>
+  console.log(`Server running at: http://localhost:${PORT}`)
+);

@@ -9,10 +9,10 @@ const { DB_HOST, DB_USERNAME, DB_PASSWORD, DB_DATABASE } = process.env;
 
 // update konfigurasi database dari file .env
 const db = mysql.createConnection({
-  host: DB_HOST,
-  user: DB_USERNAME,
-  password: DB_PASSWORD,
-  database: DB_DATABASE,
+  host: DB_HOST || "localhost",
+  user: DB_USERNAME || "root",
+  password: DB_PASSWORD || "",
+  database: DB_DATABASE || "laravel_rest_api",
 });
 
 /**
