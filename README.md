@@ -6,8 +6,12 @@ Building COVID RESTful API with Express.js
 
 Install aplikasi dan dependencies (cukup jalankan sekali):
 
-`npm run app:install`
+```bash
+npm run app:install
+```
 
 Jalankan aplikasi:
 
-`npm run start`
+```bash
+npm run start
+```
